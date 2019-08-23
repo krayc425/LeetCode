@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7543c81d-2444-4168-9adc-830c4189a0fa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BullsAndCows.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GuessNumberHigherOrLower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Intersection_of_Two_Linked_Lists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Isomorphic_Strings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Linked_List_Cycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NaryTreeLevelOrderTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reverse_Vowels_of_a_String.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StringCompression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FirstBadVersion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LowestCommonAncestorOfBinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Longest_Common_Prefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Longest_Common_Prefix.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -426,7 +417,7 @@
       <workItem from="1536332624708" duration="243000" />
       <workItem from="1542074692055" duration="29000" />
       <workItem from="1566307758448" duration="3232000" />
-      <workItem from="1566431670001" duration="4893000" />
+      <workItem from="1566431670001" duration="6487000" />
     </task>
     <servers />
   </component>
