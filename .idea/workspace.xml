@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7543c81d-2444-4168-9adc-830c4189a0fa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FirstBadVersion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LowestCommonAncestorOfBinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Convert_Number_To_Hexadecimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NumberOfBoomerangs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StringCompression">
+  <component name="RunManager" selected="Application.NumberOfBoomerangs">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -269,16 +270,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Isomorphic_Strings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Isomorphic_Strings" />
+    <configuration name="Convert_Number_To_Hexadecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Convert_Number_To_Hexadecimal" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Longest_Common_Prefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Longest_Common_Prefix" />
+    <configuration name="NumberOfBoomerangs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NumberOfBoomerangs" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -371,19 +372,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Isomorphic_Strings" />
-      <item itemvalue="Application.Longest_Common_Prefix" />
       <item itemvalue="Application.Reverse_Vowels_of_a_String" />
       <item itemvalue="Application.BullsAndCows" />
       <item itemvalue="Application.StringCompression" />
+      <item itemvalue="Application.Convert_Number_To_Hexadecimal" />
+      <item itemvalue="Application.NumberOfBoomerangs" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NumberOfBoomerangs" />
+        <item itemvalue="Application.Convert_Number_To_Hexadecimal" />
         <item itemvalue="Application.StringCompression" />
         <item itemvalue="Application.BullsAndCows" />
         <item itemvalue="Application.Reverse_Vowels_of_a_String" />
-        <item itemvalue="Application.Longest_Common_Prefix" />
-        <item itemvalue="Application.Isomorphic_Strings" />
       </list>
     </recent_temporary>
   </component>
@@ -417,7 +418,10 @@
       <workItem from="1536332624708" duration="243000" />
       <workItem from="1542074692055" duration="29000" />
       <workItem from="1566307758448" duration="3232000" />
-      <workItem from="1566431670001" duration="6487000" />
+      <workItem from="1566431670001" duration="7055000" />
+      <workItem from="1566606268113" duration="30000" />
+      <workItem from="1566606344184" duration="2625000" />
+      <workItem from="1566609328840" duration="818000" />
     </task>
     <servers />
   </component>
