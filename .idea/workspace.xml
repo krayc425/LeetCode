@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7543c81d-2444-4168-9adc-830c4189a0fa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/KeyboardRow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CloneGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Integer_to_Roman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ZigZagConversion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LongestSubstringWithoutRepeatingCharacters">
+  <component name="RunManager" selected="Application.Integer_to_Roman">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -277,8 +278,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LicenseKeyFormatting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LicenseKeyFormatting" />
+    <configuration name="Integer_to_Roman" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Integer_to_Roman" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -293,8 +294,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberOfBoomerangs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NumberOfBoomerangs" />
+    <configuration name="ZigZagConversion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ZigZagConversion" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -371,19 +372,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.NumberOfBoomerangs" />
-      <item itemvalue="Application.LicenseKeyFormatting" />
       <item itemvalue="Application.FibonacciNumber" />
       <item itemvalue="Application.DetectCapital" />
       <item itemvalue="Application.LongestSubstringWithoutRepeatingCharacters" />
+      <item itemvalue="Application.ZigZagConversion" />
+      <item itemvalue="Application.Integer_to_Roman" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Integer_to_Roman" />
+        <item itemvalue="Application.ZigZagConversion" />
         <item itemvalue="Application.LongestSubstringWithoutRepeatingCharacters" />
         <item itemvalue="Application.DetectCapital" />
         <item itemvalue="Application.FibonacciNumber" />
-        <item itemvalue="Application.LicenseKeyFormatting" />
-        <item itemvalue="Application.NumberOfBoomerangs" />
       </list>
     </recent_temporary>
   </component>
@@ -422,7 +423,8 @@
       <workItem from="1566606344184" duration="2625000" />
       <workItem from="1566609328840" duration="818000" />
       <workItem from="1566681847856" duration="1581000" />
-      <workItem from="1566757336081" duration="1922000" />
+      <workItem from="1566757336081" duration="3531000" />
+      <workItem from="1566849065219" duration="2126000" />
     </task>
     <servers />
   </component>
