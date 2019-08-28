@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7543c81d-2444-4168-9adc-830c4189a0fa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CloneGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Integer_to_Roman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ZigZagConversion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Base7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GenerateParentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LetterCombinationsOfPhoneNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Integer_to_Roman">
+  <component name="RunManager" selected="Application.GenerateParentheses">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -262,16 +262,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DetectCapital" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DetectCapital" />
+    <configuration name="Base7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Base7" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FibonacciNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FibonacciNumber" />
+    <configuration name="GenerateParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GenerateParentheses" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -286,8 +286,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestSubstringWithoutRepeatingCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LongestSubstringWithoutRepeatingCharacters" />
+    <configuration name="LetterCombinationsOfPhoneNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LetterCombinationsOfPhoneNumber" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -372,19 +372,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.FibonacciNumber" />
-      <item itemvalue="Application.DetectCapital" />
-      <item itemvalue="Application.LongestSubstringWithoutRepeatingCharacters" />
       <item itemvalue="Application.ZigZagConversion" />
       <item itemvalue="Application.Integer_to_Roman" />
+      <item itemvalue="Application.Base7" />
+      <item itemvalue="Application.LetterCombinationsOfPhoneNumber" />
+      <item itemvalue="Application.GenerateParentheses" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GenerateParentheses" />
+        <item itemvalue="Application.LetterCombinationsOfPhoneNumber" />
+        <item itemvalue="Application.Base7" />
         <item itemvalue="Application.Integer_to_Roman" />
         <item itemvalue="Application.ZigZagConversion" />
-        <item itemvalue="Application.LongestSubstringWithoutRepeatingCharacters" />
-        <item itemvalue="Application.DetectCapital" />
-        <item itemvalue="Application.FibonacciNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -425,6 +425,9 @@
       <workItem from="1566681847856" duration="1581000" />
       <workItem from="1566757336081" duration="3531000" />
       <workItem from="1566849065219" duration="2126000" />
+      <workItem from="1566852016916" duration="21000" />
+      <workItem from="1566860931443" duration="1066000" />
+      <workItem from="1567021900301" duration="2545000" />
     </task>
     <servers />
   </component>
