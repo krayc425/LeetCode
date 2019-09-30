@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7543c81d-2444-4168-9adc-830c4189a0fa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Multiply_Strings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ValidSudoku.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CopyListWithRandomPointer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/RandomNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Decode_Ways.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gray_Code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Group_Anagrams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JewelsAndStones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MaxCommonality.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Restore_IP_Addresses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SimplifyPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Single_Number_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Strange_Sort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Unique_Paths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Unique_Paths_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,7 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Multiply_Strings">
+  <component name="RunManager" selected="Application.JewelsAndStones">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -261,40 +273,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Base7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Base7" />
+    <configuration name="Decode_Ways" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Decode_Ways" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GenerateParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GenerateParentheses" />
+    <configuration name="JewelsAndStones" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JewelsAndStones" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LetterCombinationsOfPhoneNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LetterCombinationsOfPhoneNumber" />
+    <configuration name="Restore_IP_Addresses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Restore_IP_Addresses" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Multiply_Strings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Multiply_Strings" />
+    <configuration name="Single_Number_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Single_Number_2" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidSudoku" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ValidSudoku" />
+    <configuration name="Strange_Sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Strange_Sort" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -371,19 +383,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Base7" />
-      <item itemvalue="Application.LetterCombinationsOfPhoneNumber" />
-      <item itemvalue="Application.GenerateParentheses" />
-      <item itemvalue="Application.ValidSudoku" />
-      <item itemvalue="Application.Multiply_Strings" />
+      <item itemvalue="Application.Strange_Sort" />
+      <item itemvalue="Application.Decode_Ways" />
+      <item itemvalue="Application.Restore_IP_Addresses" />
+      <item itemvalue="Application.Single_Number_2" />
+      <item itemvalue="Application.JewelsAndStones" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Multiply_Strings" />
-        <item itemvalue="Application.ValidSudoku" />
-        <item itemvalue="Application.GenerateParentheses" />
-        <item itemvalue="Application.LetterCombinationsOfPhoneNumber" />
-        <item itemvalue="Application.Base7" />
+        <item itemvalue="Application.JewelsAndStones" />
+        <item itemvalue="Application.Single_Number_2" />
+        <item itemvalue="Application.Restore_IP_Addresses" />
+        <item itemvalue="Application.Decode_Ways" />
+        <item itemvalue="Application.Strange_Sort" />
       </list>
     </recent_temporary>
   </component>
@@ -426,7 +438,22 @@
       <workItem from="1566849065219" duration="2126000" />
       <workItem from="1566852016916" duration="21000" />
       <workItem from="1566860931443" duration="1066000" />
-      <workItem from="1567021900301" duration="6536000" />
+      <workItem from="1567021900301" duration="8047000" />
+      <workItem from="1567448269258" duration="2049000" />
+      <workItem from="1567465326190" duration="1693000" />
+      <workItem from="1567691742474" duration="730000" />
+      <workItem from="1568227073304" duration="379000" />
+      <workItem from="1568232050643" duration="52000" />
+      <workItem from="1568232295398" duration="879000" />
+      <workItem from="1568772096491" duration="853000" />
+      <workItem from="1569088081371" duration="59000" />
+      <workItem from="1569088162270" duration="24000" />
+      <workItem from="1569088214110" duration="4425000" />
+      <workItem from="1569093014643" duration="156000" />
+      <workItem from="1569253242767" duration="6127000" />
+      <workItem from="1569270905673" duration="322000" />
+      <workItem from="1569271774807" duration="568000" />
+      <workItem from="1569785234349" duration="2147000" />
     </task>
     <servers />
   </component>
