@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7543c81d-2444-4168-9adc-830c4189a0fa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CopyListWithRandomPointer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataStructure/RandomNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Decode_Ways.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gray_Code.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Group_Anagrams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JewelsAndStones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MaxCommonality.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Restore_IP_Addresses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimplifyPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Single_Number_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Strange_Sort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Unique_Paths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Unique_Paths_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructure/NodeNext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PopulatingNextRightPointersInEachNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PopulatingNextRightPointersInEachNode2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SerializeAndDeserializeBinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StringToInteger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JewelsAndStones">
+  <component name="RunManager" selected="Application.SerializeAndDeserializeBinaryTree">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -273,14 +264,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Decode_Ways" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Decode_Ways" />
-      <module name="LeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="JewelsAndStones" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JewelsAndStones" />
       <module name="LeetCode" />
@@ -297,6 +280,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SerializeAndDeserializeBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SerializeAndDeserializeBinaryTree" />
+      <module name="LeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Single_Number_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Single_Number_2" />
       <module name="LeetCode" />
@@ -305,8 +296,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Strange_Sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Strange_Sort" />
+    <configuration name="StringToInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringToInteger" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -383,19 +374,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Strange_Sort" />
-      <item itemvalue="Application.Decode_Ways" />
       <item itemvalue="Application.Restore_IP_Addresses" />
       <item itemvalue="Application.Single_Number_2" />
       <item itemvalue="Application.JewelsAndStones" />
+      <item itemvalue="Application.StringToInteger" />
+      <item itemvalue="Application.SerializeAndDeserializeBinaryTree" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SerializeAndDeserializeBinaryTree" />
+        <item itemvalue="Application.StringToInteger" />
         <item itemvalue="Application.JewelsAndStones" />
         <item itemvalue="Application.Single_Number_2" />
         <item itemvalue="Application.Restore_IP_Addresses" />
-        <item itemvalue="Application.Decode_Ways" />
-        <item itemvalue="Application.Strange_Sort" />
       </list>
     </recent_temporary>
   </component>
@@ -453,7 +444,13 @@
       <workItem from="1569253242767" duration="6127000" />
       <workItem from="1569270905673" duration="322000" />
       <workItem from="1569271774807" duration="568000" />
-      <workItem from="1569785234349" duration="2147000" />
+      <workItem from="1569785234349" duration="4551000" />
+      <workItem from="1570501537106" duration="104000" />
+      <workItem from="1570668452766" duration="1621000" />
+      <workItem from="1572563813007" duration="10000" />
+      <workItem from="1572563887456" duration="33000" />
+      <workItem from="1574050648382" duration="336000" />
+      <workItem from="1574138808013" duration="54000" />
     </task>
     <servers />
   </component>
