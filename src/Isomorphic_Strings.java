@@ -16,7 +16,6 @@ public class Isomorphic_Strings {
             } else if (mapT.get(t.charAt(i) - '0') != s.charAt(i) - '0') {
                 return false;
             }
-
         }
         return true;
     }
@@ -25,6 +24,5 @@ public class Isomorphic_Strings {
     public static void main(String[] args) {
         System.out.println(new Isomorphic_Strings().isIsomorphic("abra3", "ejeef"));
     }
-
-
+    
 }

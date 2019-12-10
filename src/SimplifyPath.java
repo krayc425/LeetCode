@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class SimplyPath {
+class SimplifyPath {
     public String simplifyPath(String path) {
         ArrayList<String> pathComponents = new ArrayList<>();
         for (String s : path.split("/")) {
@@ -24,7 +24,7 @@ class SimplyPath {
     }
 
     public static void main(String[] args) {
-        SimplyPath simplyPath = new SimplyPath();
+        SimplifyPath simplyPath = new SimplifyPath();
         System.out.println(simplyPath.simplifyPath("/../"));
     }
 }
