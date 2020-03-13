@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Timeline
+   version = "3.0">
+   <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/Kray/Documents/Programming/Playground/SwiftPlayground/LongestConsecutiveProduct.playground#CharacterRangeLen=10&amp;CharacterRangeLoc=355&amp;EndingColumnNumber=22&amp;EndingLineNumber=15&amp;StartingColumnNumber=12&amp;StartingLineNumber=15&amp;Timestamp=543319100.344645"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/Kray/Documents/Programming/Playground/SwiftPlayground/LongestConsecutiveProduct.playground#CharacterRangeLen=10&amp;CharacterRangeLoc=393&amp;EndingColumnNumber=22&amp;EndingLineNumber=16&amp;StartingColumnNumber=12&amp;StartingLineNumber=16&amp;Timestamp=543319100.344786"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/Kray/Documents/Programming/Playground/SwiftPlayground/LongestConsecutiveProduct.playground#CharacterRangeLen=62&amp;CharacterRangeLoc=433&amp;EndingColumnNumber=76&amp;EndingLineNumber=17&amp;StartingColumnNumber=14&amp;StartingLineNumber=17&amp;Timestamp=543319100.344889"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/Kray/Documents/Programming/Playground/SwiftPlayground/LongestConsecutiveProduct.playground#CharacterRangeLen=62&amp;CharacterRangeLoc=510&amp;EndingColumnNumber=76&amp;EndingLineNumber=18&amp;StartingColumnNumber=14&amp;StartingLineNumber=18&amp;Timestamp=543319100.344987"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/Kray/Documents/Programming/Playground/SwiftPlayground/LongestConsecutiveProduct.playground#CharacterRangeLen=30&amp;CharacterRangeLoc=593&amp;EndingColumnNumber=50&amp;EndingLineNumber=19&amp;StartingColumnNumber=20&amp;StartingLineNumber=19&amp;Timestamp=543319100.345081"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/Kray/Documents/Programming/Playground/SwiftPlayground/LongestConsecutiveProduct.playground#CharacterRangeLen=10&amp;CharacterRangeLoc=356&amp;EndingColumnNumber=23&amp;EndingLineNumber=15&amp;StartingColumnNumber=13&amp;StartingLineNumber=15&amp;Timestamp=543319100.34518"
+         lockedSize = "{180, 138}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/Kray/Documents/Programming/Playground/SwiftPlayground/LongestConsecutiveProduct.playground#CharacterRangeLen=10&amp;CharacterRangeLoc=394&amp;EndingColumnNumber=23&amp;EndingLineNumber=16&amp;StartingColumnNumber=13&amp;StartingLineNumber=16&amp;Timestamp=543319100.3452801"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/Kray/Documents/Programming/Playground/SwiftPlayground/LongestConsecutiveProduct.playground#CharacterRangeLen=62&amp;CharacterRangeLoc=434&amp;EndingColumnNumber=0&amp;EndingLineNumber=18&amp;StartingColumnNumber=15&amp;StartingLineNumber=17&amp;Timestamp=543319100.345376"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/Kray/Documents/Programming/Playground/SwiftPlayground/LongestConsecutiveProduct.playground#CharacterRangeLen=62&amp;CharacterRangeLoc=511&amp;EndingColumnNumber=0&amp;EndingLineNumber=19&amp;StartingColumnNumber=15&amp;StartingLineNumber=18&amp;Timestamp=543319100.345472"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/Kray/Documents/Programming/Playground/SwiftPlayground/LongestConsecutiveProduct.playground#CharacterRangeLen=30&amp;CharacterRangeLoc=594&amp;EndingColumnNumber=0&amp;EndingLineNumber=20&amp;StartingColumnNumber=21&amp;StartingLineNumber=19&amp;Timestamp=543319100.345567"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+   </TimelineItems>
+</Timeline>

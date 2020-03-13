@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Timeline
+   version = "3.0">
+   <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/Kray/Documents/Programming/Playground/SwiftPlayground/StairFibonacci.playground#CharacterRangeLen=45&amp;CharacterRangeLoc=139&amp;EndingColumnNumber=0&amp;EndingLineNumber=8&amp;StartingColumnNumber=12&amp;StartingLineNumber=7&amp;Timestamp=535039401.138147"
+         lockedSize = "{1230, 224}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/Kray/Documents/Programming/Playground/SwiftPlayground/StairFibonacci.playground#CharacterRangeLen=2&amp;CharacterRangeLoc=119&amp;EndingColumnNumber=0&amp;EndingLineNumber=6&amp;StartingColumnNumber=15&amp;StartingLineNumber=5&amp;Timestamp=535039401.138288"
+         lockedSize = "{180, 155}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+   </TimelineItems>
+</Timeline>
