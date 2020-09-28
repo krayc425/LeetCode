@@ -17,8 +17,8 @@ class Solution {
             if numberIndexDict[target - nums[i]] == nil {
                 numberIndexDict[target - nums[i]] = i
             }
-            if numberIndexDict[nums[i]] != nil && numberIndexDict[nums[i]] != i {
-                return [i, numberIndexDict[nums[i]]!].sorted()
+            if let target = numberIndexDict[nums[i]], target != i {
+                return [i, target].sorted()
             }
         }
         return []
