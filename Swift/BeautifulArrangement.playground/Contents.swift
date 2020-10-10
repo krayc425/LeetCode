@@ -21,4 +21,4 @@ class Solution {
     }
 }
 
-Solution().countArrangement(15)
+Solution().countArrangement(10)
