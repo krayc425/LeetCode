@@ -13,8 +13,6 @@ class RandomizedCollection {
     func insert(_ val: Int) -> Bool {
         map[val, default: Set<Int>()].insert(list.count)
         list.append(val)
-        print(map)
-        print(list)
         return map[val]!.count == 1
     }
     
@@ -49,5 +47,3 @@ class RandomizedCollection {
 let obj = RandomizedCollection()
 let ret_1: Bool = obj.insert(1)
 let ret_2: Bool = obj.insert(1)
-//let ret_3: Bool = obj.remove(1)
-
