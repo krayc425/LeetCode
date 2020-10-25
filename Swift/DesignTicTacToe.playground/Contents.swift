@@ -23,7 +23,6 @@ class TicTacToe {
                 2: Player 2 wins. */
     func move(_ row: Int, _ col: Int, _ player: Int) -> Int {
         let idx = player - 1
-        let otherIdx = 1 - idx
         rowSum[idx][row] += 1
         if rowSum[idx][row] == win {
             return player
@@ -44,24 +43,10 @@ class TicTacToe {
                 return player
             }
         }
-        rowSum[otherIdx][row] -= 1
-        colSum[otherIdx][col] -= 1
-        if row == col {
-            diagSum[otherIdx][0] -= 1
-        }
-        if row == win - 1 - col {
-            diagSum[otherIdx][1] -= 1
-        }
         return 0
     }
     
 }
-
-/**
- * Your TicTacToe object will be instantiated and called as such:
- * let obj = TicTacToe(n)
- * let ret_1: Int = obj.move(row, col, player)
- */
 
 /**
  * Your TicTacToe object will be instantiated and called as such:

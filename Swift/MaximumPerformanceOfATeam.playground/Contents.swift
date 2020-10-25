@@ -203,8 +203,7 @@ public struct Heap<T> {
 }
 
 class Solution {
-    // The performance of a team is the sum of their engineers' speeds
-    // multiplied by the minimum efficiency among their engineers.
+    // The performance of a team is the sum of their engineers' speeds multiplied by the minimum efficiency among their engineers.
     func maxPerformance(_ n: Int, _ speed: [Int], _ efficiency: [Int], _ k: Int) -> Int {
         var performance: [(s: Int, e: Int)] = []
         for i in 0..<n {
@@ -219,11 +218,16 @@ class Solution {
         for p in performance {
             speedSum += p.s
             heap.insert(p.s)
+            var update = true
             if heap.count > k {
+                update = p.s != heap.peek()!
                 speedSum -= heap.remove()!
             }
-            res = max(res, speedSum * p.e)  // p.e is always the minimum efficiency
+            if update {
+                res = max(res, speedSum * p.e)
+            }
         }
         return res % 1_000_000_007
     }
 }
+

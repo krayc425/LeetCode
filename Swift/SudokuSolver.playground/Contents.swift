@@ -34,7 +34,7 @@ class Solution {
             }
             let rowIndex = i / 3 * 3 + l / 3
             let colIndex = j / 3 * 3 + l % 3
-            if board[rowIndex][colIndex] != "." && board[rowIndex][colIndex] == k{
+            if board[rowIndex][colIndex] != "." && board[rowIndex][colIndex] == k {
                 return false
             }
         }

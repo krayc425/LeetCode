@@ -14,8 +14,7 @@ class Solution {
             if first.count > second.count && words[i - 1].prefix(second.count) == words[i] {
                 return ""
             }
-            let length = min(first.count, second.count)
-            for j in 0..<length {
+            for j in 0..<first.count {
                 let c1 = first[j]
                 let c2 = second[j]
                 if c1 != c2 {

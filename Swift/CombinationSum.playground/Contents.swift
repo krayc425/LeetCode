@@ -22,6 +22,32 @@ class Solution {
             temp.removeLast()
         }
     }
+    
+    func combinationSum_dp(_ candidates: [Int], _ target: Int) -> [[Int]] {
+        var dp: [[[Int]]] = []
+        for i in 1...target {
+            var temp: [[Int]] = []
+            for candidate in candidates.sorted() {
+                if candidate > i {
+                    break
+                }
+                if candidate == i {
+                    temp.append([candidate])
+                    break
+                }
+                for var arr in dp[i - candidate - 1] {
+                    if candidate > arr.first! {
+                        continue
+                    } else {
+                        arr.insert(candidate, at: 0)
+                        temp.append(arr)
+                    }
+                }
+            }
+            dp.append(temp)
+        }
+        return dp[target - 1]
+    }
 }
 
-Solution().combinationSum([6,5,4,3,2], 8)
+Solution().combinationSum_dp([2,3,5], 8)

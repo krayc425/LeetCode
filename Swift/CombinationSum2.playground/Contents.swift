@@ -17,8 +17,10 @@ class Solution {
         }
         // 从前往后开始循环
         for i in index..<candidates.count {
-            temp.append(candidates[i])
-                                                // 与1不同的是 这里是i+1
+            if i > index && candidates[i - 1] == candidates[i] {
+                continue
+            }
+            temp.append(candidates[i]) // 与1不同的是 这里是i+1
             process(&result, &temp, candidates, i + 1, target - candidates[i])
             temp.removeLast()
         }
