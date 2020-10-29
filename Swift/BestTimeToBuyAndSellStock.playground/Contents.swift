@@ -20,4 +20,17 @@ class Solution {
         }
         return max > 0 ? max : 0
     }
+    
+    func maxProfit_solution2(_ prices: [Int]) -> Int {
+        var minPrice = Int.max
+        var res = 0
+        for p in prices {
+            if p < minPrice {
+                minPrice = p
+            } else {
+                res = max(p - minPrice, res)
+            }
+        }
+        return res
+    }
 }

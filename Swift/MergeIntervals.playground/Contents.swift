@@ -1,21 +1,16 @@
 class Solution {
     func merge(_ intervals: [[Int]]) -> [[Int]] {
-        var results: [[Int]] = []
         guard !intervals.isEmpty else {
-            return results
+            return []
         }
         if intervals.count == 1 {
-            results.append(intervals[0])
-            return results
+            return [intervals[0]]
         }
-        var intervals = intervals
-        for var interval in intervals {
-            interval.sort()
-        }
-        intervals.sort { $0[0] < $1[0] }
+        var results: [[Int]] = []
+        let intervals = intervals.sorted(by: { $0[0] < $1[0] })
         var left: Int = intervals[0][0]
         var right: Int = intervals[0][1]
-        for interval in intervals {
+        for interval in intervals.dropFirst() {
             if interval[0] <= right {
                 right = max(right, interval[1])
             } else {

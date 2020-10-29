@@ -10,23 +10,26 @@ public class Interval {
 
 class Solution {
     func employeeFreeTime(_ schedule: [[Interval]]) -> [Interval] {
-        var sortedInterval = schedule.reduce([], +).sorted(by: { $0.start < $1.start })
+        let sortedInterval = schedule.reduce([], +).sorted(by: { $0.start < $1.start })
         guard sortedInterval.count > 1 else {
             return []
         }
-        var res: [Interval] = []
-        var first = 0
-        for i in 1..<sortedInterval.count {
-            if sortedInterval[i].start <= sortedInterval[first].end {
-                sortedInterval[first].end = max(sortedInterval[first].end, sortedInterval[i].end)
-                sortedInterval[i].end = Int.min
+        var mergedIntervals: [Interval] = []
+        var left = sortedInterval[0].start
+        var right = sortedInterval[0].end
+        for interval in sortedInterval.dropFirst() {
+            if interval.start <= right {
+                right = max(right, interval.end)
             } else {
-                first = i
+                mergedIntervals.append(Interval(left, right))
+                left = interval.start
+                right = interval.end
             }
         }
-        sortedInterval = sortedInterval.filter { $0.end != Int.min }
-        for i in 0..<sortedInterval.count - 1 {
-            res.append(Interval(sortedInterval[i].end, sortedInterval[i + 1].start))
+        mergedIntervals.append(Interval(left, right))
+        var res: [Interval] = []
+        for i in 0..<mergedIntervals.count - 1 {
+            res.append(Interval(mergedIntervals[i].end, mergedIntervals[i + 1].start))
         }
         return res
     }
