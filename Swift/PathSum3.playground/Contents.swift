@@ -32,6 +32,26 @@ class Solution {
         }
         return result
     }
+    
+    func pathSum_prefixSum(_ root: TreeNode?, _ sum: Int) -> Int {
+        var visited: [Int: Int] = [0: 1]
+        var res: Int = 0
+        process_prefixSum(root, sum, 0, &visited, &res)
+        return res
+    }
+    
+    func process_prefixSum(_ node: TreeNode?, _ sum: Int, _ prefixSum: Int, _ visited: inout [Int: Int], _ res: inout Int) {
+        guard let node = node else {
+            return
+        }
+        let currentSum = node.val + prefixSum
+        res += visited[currentSum - sum] ?? 0
+        visited[currentSum, default: 0] += 1
+        process_prefixSum(node.left, sum, currentSum, &visited, &res)
+        process_prefixSum(node.right, sum, currentSum, &visited, &res)
+        visited[currentSum, default: 0] -= 1
+    }
+    
 }
 
 let node = TreeNode(10)
