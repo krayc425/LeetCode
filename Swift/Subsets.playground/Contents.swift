@@ -1,13 +1,12 @@
 class Solution {
     func subsets(_ nums: [Int]) -> [[Int]] {
-        var result: [[Int]] = []
-        var temp: [Int] = []
         guard !nums.isEmpty else {
             return []
         }
+        var result: [[Int]] = []
         var nums = nums
         for i in 0...nums.count {
-            temp = []
+            var temp: [Int] = []
             process(&result, &temp, &nums, 0, i)
         }
         return result
@@ -15,7 +14,6 @@ class Solution {
     
     func process(_ result: inout [[Int]], _ temp: inout [Int], _ nums: inout [Int], _ start: Int, _ n: Int) {
         if temp.count == n {
-            print(temp)
             result.append(temp)
             return
         }
