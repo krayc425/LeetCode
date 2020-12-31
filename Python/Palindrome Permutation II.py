@@ -37,8 +37,3 @@ class Solution:
             self.getPermutations(result, item, visited, chars)
             item.pop()
             visited[i] = False
-
-
-if __name__ == "__main__":
-    s = Solution()
-    print(s.generatePalindromes("aaff"))
