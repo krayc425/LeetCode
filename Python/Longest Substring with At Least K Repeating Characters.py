@@ -27,7 +27,3 @@ class Solution:
                 if unique == i and unique == at_least_k:
                     res = max(res, end - start)
         return res
-
-
-if __name__ == '__main__':
-    print(Solution().longestSubstring("aadede", 2))

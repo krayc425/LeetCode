@@ -7,14 +7,14 @@ class TreeNode:
 
 
 class Solution:
-    def isMirror(self, node1: TreeNode, node2: TreeNode) -> bool:
-        if node1 is None and node2 is None:
-            return True
-        if node1 is None or node2 is None:
-            return False
-        return node1.val == node2.val \
-               and self.isMirror(node1.left, node2.right) \
-               and self.isMirror(node1.right, node2.left)
-
     def isSymmetric(self, root: TreeNode) -> bool:
-        return self.isMirror(root, root)
+        def isMirror(node1: TreeNode, node2: TreeNode) -> bool:
+            if node1 is None and node2 is None:
+                return True
+            if node1 is None or node2 is None:
+                return False
+            return node1.val == node2.val \
+                   and isMirror(node1.left, node2.right) \
+                   and isMirror(node1.right, node2.left)
+
+        return isMirror(root, root)

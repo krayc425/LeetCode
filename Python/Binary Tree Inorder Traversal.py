@@ -10,16 +10,16 @@ class TreeNode:
 
 
 class Solution:
-    def inorder(self, root: TreeNode, res: List[int]):
-        if root is None:
-            return
-        self.inorder(root.left, res)
-        res.append(root.val)
-        self.inorder(root.right, res)
-
     def inorderTraversal(self, root: TreeNode) -> List[int]:
+        def inorder(root: TreeNode, res: List[int]):
+            if root is None:
+                return
+            inorder(root.left, res)
+            res.append(root.val)
+            inorder(root.right, res)
+
         if root is None:
             return []
         res = []
-        self.inorder(root, res)
+        inorder(root, res)
         return res
