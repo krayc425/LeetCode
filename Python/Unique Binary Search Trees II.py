@@ -20,10 +20,7 @@ class Solution:
                 right_trees = generate_subtree(i + 1, end)
                 for l in left_trees:
                     for r in right_trees:
-                        curr_tree = TreeNode(i)
-                        curr_tree.left = l
-                        curr_tree.right = r
-                        all_trees.append(curr_tree)
+                        all_trees.append(TreeNode(i, l, r))
             return all_trees
 
         return generate_subtree(1, n) if n else []

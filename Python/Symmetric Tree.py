@@ -9,9 +9,9 @@ class TreeNode:
 class Solution:
     def isSymmetric(self, root: TreeNode) -> bool:
         def isMirror(node1: TreeNode, node2: TreeNode) -> bool:
-            if node1 is None and node2 is None:
+            if not node1 and not node2:
                 return True
-            if node1 is None or node2 is None:
+            if not node1 or not node2:
                 return False
             return node1.val == node2.val \
                    and isMirror(node1.left, node2.right) \

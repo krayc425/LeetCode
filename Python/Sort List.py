@@ -9,7 +9,7 @@ class Solution:
     def getMid(self, node: ListNode) -> ListNode:
         midPrev = None
         while node and node.next:
-            midPrev = node if midPrev is None else midPrev.next
+            midPrev = node if not midPrev else midPrev.next
             node = node.next.next
         mid = midPrev.next
         midPrev.next = None
@@ -33,7 +33,7 @@ class Solution:
         return head.next
 
     def sortList(self, head: ListNode) -> ListNode:
-        if head is None or head.next is None:
+        if not head or not head.next:
             return head
         mid = self.getMid(head)
         left = self.sortList(head)

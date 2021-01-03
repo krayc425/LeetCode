@@ -12,7 +12,7 @@ class TreeNode:
 class Solution:
     def balanceBST(self, root: TreeNode) -> TreeNode:
         def inorder(node: TreeNode) -> List[TreeNode]:
-            if node is None:
+            if not node:
                 return []
             return inorder(node.left) + [node] + inorder(node.right)
 
