@@ -3,10 +3,10 @@ from typing import List
 
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
-        if endWord not in wordList:
+        if beginWord == endWord or endWord not in wordList:
             return 0
         wordList = set(wordList)
-        visited = set(beginWord)
+        visited = {beginWord}
         queue = [beginWord]
         step = 1
         while len(queue) > 0:

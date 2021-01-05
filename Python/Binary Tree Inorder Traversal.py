@@ -11,6 +11,10 @@ class TreeNode:
 
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
+        res = []
+        if not root:
+            return res
+
         def inorder(root: TreeNode, res: List[int]):
             if not root:
                 return
@@ -18,8 +22,5 @@ class Solution:
             res.append(root.val)
             inorder(root.right, res)
 
-        if not root:
-            return []
-        res = []
         inorder(root, res)
         return res

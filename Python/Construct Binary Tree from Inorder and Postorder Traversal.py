@@ -15,7 +15,7 @@ class Solution:
         for idx, num in enumerate(inorder):
             map[num] = idx
 
-        def helper(left: int, right: int):
+        def helper(left, right: int) -> TreeNode:
             if left > right:
                 return None
             val = postorder.pop()
