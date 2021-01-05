@@ -14,26 +14,27 @@ class Solution:
         if len(char_set) > 1:
             return []
         mid = "" if len(char_set) == 0 else char_set.pop()
+
+        n = len(chars)
+
+        def backtrack(result, temp, visited, chars):
+            if len(temp) == n:
+                result.append(''.join(temp))
+                return
+            for i in range(n):
+                if visited[i]:
+                    continue
+                if i > 0 and chars[i - 1] == chars[i] and not visited[i - 1]:
+                    continue
+                temp.append(chars[i])
+                visited[i] = True
+                backtrack(result, temp, visited, chars)
+                visited[i] = False
+                temp.pop()
+
         permutations = []
-        self.getPermutations(permutations, [], [False] * len(chars), sorted(chars))
+        visited = [False] * n
+        chars.sort()
+        backtrack(permutations, [], visited, chars)
         # str + mid + reverse(str)
-        return [x + mid + "".join(reversed(x)) for x in permutations]
-
-    def getPermutations(self, result, item, visited, chars):
-        # backtrack
-        if len(item) == len(chars):
-            result.append(''.join(item))
-            return
-
-        for i in range(len(chars)):
-            if visited[i]:
-                continue
-            # avoid duplicates
-            if i > 0 and chars[i - 1] == chars[i] and not visited[i - 1]:
-                continue
-
-            visited[i] = True
-            item.append(chars[i])
-            self.getPermutations(result, item, visited, chars)
-            item.pop()
-            visited[i] = False
+        return [x + mid + x[::-1] for x in permutations]
