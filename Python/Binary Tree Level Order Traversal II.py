@@ -19,12 +19,12 @@ class Solution:
             temp = []
             n = len(queue)
             for i in range(n):
-                node = queue[0]
+                node = queue[i]
                 temp.append(node.val)
                 if node.left is not None:
                     queue.append(node.left)
                 if node.right is not None:
                     queue.append(node.right)
-                queue = queue[1:]
+            queue = queue[n:]
             res.append(temp)
         return res[::-1]

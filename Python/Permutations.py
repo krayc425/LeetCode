@@ -11,11 +11,11 @@ class Solution:
                 return
             for i in range(n):
                 if not visited[i]:
-                    visited[i] = True
                     temp.append(nums[i])
+                    visited[i] = True
                     backtrack(result, visited, temp)
-                    temp.pop()
                     visited[i] = False
+                    temp.pop()
 
         res = []
         temp = []

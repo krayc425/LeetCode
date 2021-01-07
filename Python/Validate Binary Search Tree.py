@@ -11,11 +11,11 @@ class TreeNode:
 
 class Solution:
     def isValidBST(self, root: TreeNode) -> bool:
-        def validate(root: TreeNode, low: int, high: int) -> bool:
-            if not root:
+        def validate(node: TreeNode, low: int, high: int) -> bool:
+            if not node:
                 return True
-            if root.val <= low or root.val >= high:
+            if node.val <= low or node.val >= high:
                 return False
-            return validate(root.left, low, root.val) and validate(root.right, root.val, high)
+            return validate(node.left, low, node.val) and validate(node.right, node.val, high)
 
         return validate(root, -math.inf, math.inf)

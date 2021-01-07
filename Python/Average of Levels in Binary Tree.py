@@ -10,21 +10,21 @@ class TreeNode:
 
 
 class Solution:
-    def levelOrder(self, root: TreeNode) -> List[List[int]]:
+    def averageOfLevels(self, root: TreeNode) -> List[float]:
         res = []
         if not root:
             return res
         queue = [root]
         while len(queue) > 0:
-            temp = []
+            sum = 0.0
             n = len(queue)
             for i in range(n):
                 node = queue[i]
-                temp.append(node.val)
+                sum += node.val
                 if node.left is not None:
                     queue.append(node.left)
                 if node.right is not None:
                     queue.append(node.right)
             queue = queue[n:]
-            res.append(temp)
+            res.append(sum / n)
         return res
