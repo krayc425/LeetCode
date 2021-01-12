@@ -13,6 +13,7 @@ class Solution:
     def distanceK(self, root: TreeNode, target: TreeNode, K: int) -> List[int]:
         parentMap = {}
 
+        # build a map for: node -> parent
         def inorder(node: TreeNode, parent: TreeNode):
             if not node:
                 return
@@ -24,8 +25,8 @@ class Solution:
         inorder(root, None)
 
         queue = [target]
-        level = 0
         visited = {target}
+        level = 0
         while len(queue) > 0:
             if level == K:
                 break

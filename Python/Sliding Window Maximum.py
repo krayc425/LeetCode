@@ -9,7 +9,7 @@ class Solution:
             return []
         if k == 1:
             return nums
-        # all nums[i] (i in deque) are in decreasing order
+        # all nums[i] (i in deque) are in **decreasing** order
         # so d[0] will always be the max element within the range
         d = deque()
         curr_max = nums[0]

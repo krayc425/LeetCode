@@ -19,6 +19,5 @@ class Solution:
 
         res = set()
         visited = set()
-        temp = []
-        backtrack(res, temp, visited)
+        backtrack(res, [], visited)
         return list(res)

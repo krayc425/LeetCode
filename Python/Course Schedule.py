@@ -1,15 +1,16 @@
 from typing import List
+from collections import defaultdict
 
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        in_degree = {}
+        in_degree = defaultdict(int)
         for i in range(numCourses):
             in_degree[i] = 0
-        children = {}
+        children = defaultdict(list)
         for p in prerequisites:
-            in_degree[p[0]] = in_degree.get(p[0], 0) + 1
-            children[p[1]] = children.get(p[1], []) + [p[0]]
+            in_degree[p[0]] += 1
+            children[p[1]].append(p[0])
         queue = []
         for course, degree in in_degree.items():
             if degree == 0:
