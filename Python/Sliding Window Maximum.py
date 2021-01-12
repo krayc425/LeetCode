@@ -9,12 +9,17 @@ class Solution:
             return []
         if k == 1:
             return nums
+        # all nums[i] (i in deque) are in decreasing order
+        # so d[0] will always be the max element within the range
         d = deque()
         curr_max = nums[0]
 
         def clean_deque(i: int):
+            # remove indexes of elements not from sliding window
             if len(d) > 0 and d[0] <= i - k:
                 d.popleft()
+            # remove from deque indexes of all elements
+            # which are smaller than current element nums[i]
             while len(d) > 0 and nums[d[-1]] < nums[i]:
                 d.pop()
 

@@ -17,10 +17,9 @@ class Solution:
         res = []
         while len(stack) > 0:
             node = stack.pop()
-            if node:
-                res.append(node.val)
-                if node.left:
-                    stack.append(node.left)
-                if node.right:
-                    stack.append(node.right)
+            res.append(node.val)
+            if node.left:
+                stack.append(node.left)
+            if node.right:
+                stack.append(node.right)
         return res[::-1]

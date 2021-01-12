@@ -7,9 +7,9 @@ class TreeNode:
 
 
 class Solution:
-    res = float('-inf')
-
     def maxPathSum(self, root: TreeNode) -> int:
+        self.res = float('-inf')
+
         def maxGain(node: TreeNode) -> int:
             if not node:
                 return 0

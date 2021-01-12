@@ -54,7 +54,7 @@ class Trie:
         Returns if the word is in the trie.
         """
         node = self.searchPrefix(word)
-        return node is not None and node.isEnd
+        return node and node.isEnd
 
     def startsWith(self, prefix: str) -> bool:
         """

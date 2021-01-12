@@ -1,15 +1,16 @@
 from typing import List
+from collections import defaultdict
 
 
 class Solution:
     def findLadders(self, beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:
         if beginWord == endWord or endWord not in wordList:
             return []
-        combos = {}
+        combos = defaultdict(list)
         for w in wordList:
             for i in range(len(w)):
                 key = w[:i] + "*" + w[i + 1:]
-                combos[key] = combos.get(key, []) + [w]
+                combos[key].append(w)
         q = [(beginWord, [beginWord])]
         word_set = set(beginWord)
         res = []

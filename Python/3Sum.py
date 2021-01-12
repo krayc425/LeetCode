@@ -21,10 +21,10 @@ class Solution:
                             k -= 1
                 else:
                     if sum == 0:
-                        res.add('_'.join([str(x) for x in [nums[i], nums[j], nums[k]]]))
+                        res.add((nums[i], nums[j], nums[k]))
                     if nums[j] != nums[j + 1]:
                         j += 1
                     else:
                         while j < k and nums[j] == nums[j + 1]:
                             j += 1
-        return [[int(x) for x in r.split("_")] for r in res]
+        return list([list(x) for x in res])
