@@ -9,7 +9,7 @@ class Solution:
         self.res = [0] * n
 
         def merge(start, end: int, nums: List[int]):
-            # each half of nums is already sorted now
+            # each half of nums is already sorted (in ascending order)
             mid = (start + end) // 2
             temp = []
             left = start
@@ -21,8 +21,15 @@ class Solution:
                     right += 1
                 else:
                     temp.append(nums[left])
-                    # increase numbers that are greater than current one
-                    self.res[nums[left][0]] += right - mid - 1
+                    '''
+                    Example:
+                    [0, 4, 6], [-1, 2, 3]
+                     l          m+1 r
+                     Now it's the first time that nums[r] >= nums[l],
+                     so all numbers in [m+1, r) are smaller than nums[l].
+                     Increase the count accordingly.
+                    '''
+                    self.res[nums[left][0]] += right - (mid + 1)
                     left += 1
             while left <= mid:
                 temp.append(nums[left])

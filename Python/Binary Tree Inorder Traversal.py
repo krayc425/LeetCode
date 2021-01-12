@@ -24,3 +24,18 @@ class Solution:
 
         inorder(root, res)
         return res
+
+    def inorderTraversal_iterative(self, root: TreeNode) -> List[int]:
+        res = []
+        if not root:
+            return res
+        stack = []
+        node = root
+        while node or len(stack) > 0:
+            while node:
+                stack.append(node)
+                node = node.left
+            node = stack.pop()
+            res.append(node.val)
+            node = node.right
+        return res
