@@ -15,7 +15,7 @@ class Solution:
         curr_max = nums[0]
 
         def clean_deque(i: int):
-            # remove indexes of elements not from sliding window
+            # remove indexes of elements not in the sliding window
             if len(d) > 0 and d[0] <= i - k:
                 d.popleft()
             # remove from deque indexes of all elements

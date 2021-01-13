@@ -6,6 +6,7 @@ class Solution:
 
     def findKthLargest(self, nums: List[int], k: int) -> int:
         def partition(nums) -> int:
+            # sort nums in descending order
             pivot = nums[0]
             left, right = 1, 1
             while right < len(nums):

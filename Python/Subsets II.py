@@ -7,19 +7,19 @@ class Solution:
         if n == 0:
             return []
 
-        def backtrack(start: int, count: int, result: List[List[int]], temp: List[int]):
+        self.res = []
+
+        def backtrack(start: int, count: int, temp: List[int]):
             if len(temp) == count:
-                result.append(temp[:])
+                self.res.append(temp[:])
                 return
             for i in range(start, n):
                 if i == start or nums[i] != nums[i - 1]:
                     temp.append(nums[i])
-                    backtrack(i + 1, count, result, temp)
+                    backtrack(i + 1, count, temp)
                     temp.pop()
 
-        res = []
         nums.sort()
         for i in range(n + 1):
-            temp = []
-            backtrack(0, i, res, temp)
-        return res
+            backtrack(0, i, [])
+        return self.res

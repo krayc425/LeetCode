@@ -8,7 +8,7 @@ class Solution:
         """
         r = 0
         b = len(nums) - 1
-        curr = 0
+        curr = 1
         while curr <= b:
             if nums[curr] == 0:
                 nums[curr], nums[r] = nums[r], nums[curr]
