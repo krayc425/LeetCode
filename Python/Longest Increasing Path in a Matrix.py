@@ -3,10 +3,11 @@ from typing import List
 
 class Solution:
     def longestIncreasingPath(self, matrix: List[List[int]]) -> int:
-        if len(matrix) == 0 or len(matrix[0]) == 0:
-            return 0
-        directions = [[-1, 0], [1, 0], [0, -1], [0, 1]]
         m, n = len(matrix), len(matrix[0])
+        if m * n == 0:
+            return 0
+
+        directions = [[-1, 0], [1, 0], [0, -1], [0, 1]]
 
         def dfs(i, j: int, cache: List[List[int]]) -> int:
             if cache[i][j] != 0:

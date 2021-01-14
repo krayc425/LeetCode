@@ -1,11 +1,12 @@
 from typing import List
+from collections import defaultdict
 
 
 class Solution:
     def leastInterval(self, tasks: List[str], n: int) -> int:
-        map = {}
+        map = defaultdict(int)
         for t in tasks:
-            map[t] = map.get(t, 0) + 1
+            map[t] += 1
         freqs = list(reversed(sorted(map.values())))
         max_freq = freqs[0]
         idle_slot = (max_freq - 1) * n

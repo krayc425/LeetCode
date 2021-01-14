@@ -10,7 +10,7 @@ class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         self.res = None
 
-        def helper(node):
+        def helper(node: 'TreeNode') -> bool:
             if not node:
                 return False
             left = helper(node.left)

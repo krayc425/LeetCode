@@ -6,7 +6,7 @@ class Solution:
         directions = [[-1, 0], [1, 0], [0, -1], [0, 1]]
         m, n = len(board), len(board[0])
 
-        def backtrack(i, j: int, suffix: str):
+        def dfs(i, j: int, suffix: str):
             if len(suffix) == 0:
                 return True
             if i < 0 or i >= m or j < 0 or j >= n or board[i][j] != suffix[0]:
@@ -15,7 +15,7 @@ class Solution:
                 new_i = i + d[0]
                 new_j = j + d[1]
                 board[i][j] = "."
-                if backtrack(new_i, new_j, suffix[1:]):
+                if dfs(new_i, new_j, suffix[1:]):
                     board[i][j] = suffix[0]
                     return True
                 board[i][j] = suffix[0]
@@ -23,6 +23,6 @@ class Solution:
 
         for i in range(m):
             for j in range(n):
-                if backtrack(i, j, word):
+                if dfs(i, j, word):
                     return True
         return False

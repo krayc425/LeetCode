@@ -21,7 +21,7 @@ class Solution:
                 word, path = q[i]
                 for j in range(len(word)):
                     new_word = word[:j] + "*" + word[j + 1:]
-                    for w in combos.get(new_word, []):
+                    for w in combos[new_word]:
                         if w == endWord:
                             res.append(path + [w])
                         if w not in word_set:

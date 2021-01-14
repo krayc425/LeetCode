@@ -46,8 +46,7 @@ class Codec:
             return node
 
         strs = data.split(self.delimiter)
-        node = helper(strs)
-        return node
+        return helper(strs)
 
 # Your Codec object will be instantiated and called as such:
 # ser = Codec()

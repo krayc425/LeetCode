@@ -12,7 +12,7 @@ class Solution:
         carry = 0
         l1_curr = l1
         l2_curr = l2
-        while l1_curr is not None and l2_curr is not None:
+        while l1_curr and l2_curr:
             next_val = l1_curr.val + l2_curr.val + carry
             if next_val >= 10:
                 next_val = next_val - 10
@@ -23,7 +23,7 @@ class Solution:
             curr = curr.next
             l1_curr = l1_curr.next
             l2_curr = l2_curr.next
-        while l1_curr is not None:
+        while l1_curr:
             next_val = l1_curr.val + carry
             if next_val >= 10:
                 next_val = next_val - 10
@@ -33,7 +33,7 @@ class Solution:
             curr.next = ListNode(next_val)
             curr = curr.next
             l1_curr = l1_curr.next
-        while l2_curr is not None:
+        while l2_curr:
             next_val = l2_curr.val + carry
             if next_val >= 10:
                 next_val = next_val - 10

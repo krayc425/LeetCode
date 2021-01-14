@@ -3,7 +3,8 @@ from typing import List
 
 class Solution:
     def findKthPositive(self, arr: List[int], k: int) -> int:
-        if len(arr) == 0:
+        n = len(arr)
+        if n == 0:
             return k
         min_ele = arr[0]
         if min_ele > k:
@@ -11,7 +12,7 @@ class Solution:
         missed_cnt = 0
         i = 1
         j = 0
-        while j < len(arr):
+        while j < n:
             if arr[j] == i:
                 j += 1
             else:
@@ -19,4 +20,4 @@ class Solution:
             if missed_cnt == k:
                 return i
             i += 1
-        return len(arr) + k
+        return n + k

@@ -4,9 +4,10 @@ from typing import List
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         result = [-1, -1]
-        if len(nums) == 0:
+        n = len(nums)
+        if n == 0:
             return result
-        left, right = 0, len(nums) - 1
+        left, right = 0, n - 1
         while left < right:
             mid = left + (right - left) // 2
             if nums[mid] < target:
@@ -17,7 +18,7 @@ class Solution:
             result[0] = left
         else:
             return result
-        left, right = 0, len(nums) - 1
+        left, right = 0, n - 1
         while left < right:
             mid = left + (right - left) // 2 + 1
             if nums[mid] > target:

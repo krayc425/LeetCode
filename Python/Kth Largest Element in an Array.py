@@ -22,7 +22,7 @@ class Solution:
                 return nums[0]
             idx = partition(nums)
             if idx < k - 1:
-                return quickselect(nums[idx + 1:], k - idx - 1)
+                return quickselect(nums[idx + 1:], k - (idx + 1))
             elif idx > k - 1:
                 return quickselect(nums[:idx], k)
             else:

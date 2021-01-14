@@ -9,7 +9,7 @@ class Solution:
         n = len(matrix)
         mid = n // 2
         for i in range(mid):
-            end = n - i - 1
+            end = n - 1 - i
             for j in range(end - i):
                 curr = matrix[i][i + j]
                 matrix[i][i + j] = matrix[end - j][i]

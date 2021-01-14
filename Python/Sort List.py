@@ -24,11 +24,10 @@ class Solution:
             if left_curr.val < right_curr.val:
                 curr.next = left_curr
                 left_curr = left_curr.next
-                curr = curr.next
             else:
                 curr.next = right_curr
                 right_curr = right_curr.next
-                curr = curr.next
+            curr = curr.next
         curr.next = left_curr if left_curr else right_curr
         return head.next
 

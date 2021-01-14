@@ -12,7 +12,7 @@ class Solution:
             if res > 1 << 31:
                 return 0
             else:
-                return int(-1 * res)
+                return int(-res)
         else:
             if res > 1 << 32 - 1:
                 return 0

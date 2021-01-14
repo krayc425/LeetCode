@@ -1,12 +1,15 @@
+from collections import defaultdict
+
+
 class Solution:
     def lengthOfLongestSubstringKDistinct(self, s: str, k: int) -> int:
         if len(s) * k == 0:
             return 0
         res = 1
         left = 0
-        map = {}
+        map = defaultdict(int)
         for right, char in enumerate(s):
-            map[char] = map.get(char, 0) + 1
+            map[char] += 1
             while len(map) > k:
                 left_char = s[left]
                 map[left_char] -= 1

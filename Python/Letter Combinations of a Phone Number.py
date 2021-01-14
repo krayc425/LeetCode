@@ -19,10 +19,8 @@ class Solution:
                 res.extend(map[d])
             else:
                 r_len = len(res)
-                while r_len > 0:
-                    r = res[0]
+                for i in range(r_len):
                     for letter in map[d]:
-                        res.append(r + letter)
-                    res = res[1:]
-                    r_len -= 1
+                        res.append(res[i] + letter)
+                res = res[r_len:]
         return res

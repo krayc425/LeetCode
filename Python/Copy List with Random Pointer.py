@@ -11,7 +11,7 @@ class Solution:
         def clone_node(node: 'Node') -> 'Node':
             if not node:
                 return None
-            new_node = Node(x=node.val)
+            new_node = Node(node.val)
             new_node.next = clone_node(node.next)
             return new_node
 

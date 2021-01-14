@@ -26,9 +26,9 @@ class Solution:
         return res
 
     def inorderTraversal_iterative(self, root: TreeNode) -> List[int]:
-        res = []
         if not root:
-            return res
+            return []
+        res = []
         stack = []
         node = root
         while node or len(stack) > 0:

@@ -1,8 +1,11 @@
+from collections import defaultdict
+
+
 class Solution:
     def canPermutePalindrome(self, s: str) -> bool:
-        map = {}
+        map = defaultdict(int)
         for c in s:
-            map[c] = map.get(c, 0) + 1
+            map[c] += 1
         odd = 0
         for (char, count) in map.items():
             if count % 2 == 1:

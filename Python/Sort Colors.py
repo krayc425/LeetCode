@@ -7,15 +7,15 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         r = 0
+        g = 1
         b = len(nums) - 1
-        curr = 1
-        while curr <= b:
-            if nums[curr] == 0:
-                nums[curr], nums[r] = nums[r], nums[curr]
+        while g <= b:
+            if nums[g] == 0:
+                nums[g], nums[r] = nums[r], nums[g]
                 r += 1
-                curr += 1
-            elif nums[curr] == 2:
-                nums[curr], nums[b] = nums[b], nums[curr]
+                g += 1
+            elif nums[g] == 2:
+                nums[g], nums[b] = nums[b], nums[g]
                 b -= 1
             else:
-                curr += 1
+                g += 1
