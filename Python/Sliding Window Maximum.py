@@ -13,7 +13,8 @@ class Solution:
         # so d[0] will always be the max element within the range
         d = deque()
 
-        def clean_deque(i: int):
+        res = [nums[0]]
+        for i in range(n):
             # remove indexes of elements not in the sliding window
             if len(d) > 0 and d[0] <= i - k:
                 d.popleft()
@@ -21,10 +22,6 @@ class Solution:
             # which are smaller than current element nums[i]
             while len(d) > 0 and nums[d[-1]] < nums[i]:
                 d.pop()
-
-        res = [nums[0]]
-        for i in range(n):
-            clean_deque(i)
             d.append(i)
             if i < k:
                 res[0] = max(res[0], nums[i])

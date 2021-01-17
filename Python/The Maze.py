@@ -6,8 +6,7 @@ class Solution:
     def hasPath(self, maze: List[List[int]], start: List[int], destination: List[int]) -> bool:
         m, n = len(maze), len(maze[0])
         directions = [[-1, 0], [0, -1], [1, 0], [0, 1]]
-        q = deque()
-        q.append(start)
+        q = deque([start])
         visited = [[False for _ in range(n)] for _ in range(m)]
         while q:
             prev = q.popleft()

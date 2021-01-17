@@ -7,12 +7,10 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         n = len(nums)
-        i = 0
         non_zero_i = 0
-        while i < n:
+        for i in range(n):
             if nums[i] != 0:
                 nums[non_zero_i] = nums[i]
                 non_zero_i += 1
-            i += 1
         for i in range(non_zero_i, n):
             nums[i] = 0

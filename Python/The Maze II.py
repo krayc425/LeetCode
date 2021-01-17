@@ -6,8 +6,7 @@ class Solution:
     def shortestDistance(self, maze: List[List[int]], start: List[int], destination: List[int]) -> int:
         m, n = len(maze), len(maze[0])
         directions = [[-1, 0], [0, -1], [1, 0], [0, 1]]
-        q = deque()
-        q.append(start)
+        q = deque([start])
         distance = [[float('inf') for _ in range(n)] for _ in range(m)]
         distance[start[0]][start[1]] = 0
         while q:

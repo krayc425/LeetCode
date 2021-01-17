@@ -10,6 +10,8 @@ class Solution:
         first_zero_col = -1
         m, n = len(matrix), len(matrix[0])
         for i in range(m):
+            if i == first_zero_row:
+                continue
             for j in range(n):
                 if j == first_zero_col:
                     continue

@@ -19,8 +19,8 @@ class Solution:
         while len(queue) > 0:
             course = queue.pop()
             done += 1
-            for child in children.get(course, []):
-                in_degree[child] = in_degree.get(child) - 1
+            for child in children[course]:
+                in_degree[child] -= 1
                 if in_degree[child] == 0:
                     queue.append(child)
         return done == numCourses

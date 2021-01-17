@@ -6,12 +6,11 @@ class Solution:
     def alienOrder(self, words: List[str]) -> str:
         in_degree = defaultdict(int)
         order_map = defaultdict(list)
-        n = len(words)
         for w in words:
             for c in w:
                 in_degree[c] = 0
                 order_map[c] = []
-        for i in range(1, n):
+        for i in range(1, len(words)):
             first = words[i - 1]
             second = words[i]
             if len(first) > len(second) and first[:len(second)] == second:

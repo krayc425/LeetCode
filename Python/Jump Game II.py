@@ -7,8 +7,8 @@ class Solution:
         if n < 2:
             return 0
         res = 1
-        max_pos = nums[0]
-        max_steps = nums[0]
+        max_pos = nums[0]  # maximum position reachable starting from the current index i or before
+        max_steps = nums[0]  # maximum position reachable during the current jump
         for i in range(1, n):
             if i > max_steps:
                 res += 1
