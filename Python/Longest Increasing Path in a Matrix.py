@@ -4,7 +4,7 @@ from typing import List
 class Solution:
     def longestIncreasingPath(self, matrix: List[List[int]]) -> int:
         m, n = len(matrix), len(matrix[0])
-        if m * n == 0:
+        if m == 0 or n == 0:
             return 0
 
         directions = [[-1, 0], [1, 0], [0, -1], [0, 1]]

@@ -5,7 +5,7 @@ class NumMatrix:
 
     def __init__(self, matrix: List[List[int]]):
         if not matrix or not matrix[0]:
-            return None
+            return
         m, n = len(matrix), len(matrix[0])
         prefix = [[0 for _ in range(n + 1)] for _ in range(m + 1)]
         for i in range(m):

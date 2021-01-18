@@ -30,10 +30,10 @@ class Solution:
         else:
             if root.left is None and root.right is None:
                 root = None
-            elif root.left is not None:
+            elif root.left:
                 root.val = self.predNode(root)
                 root.left = self.deleteNode(root.left, root.val)
-            elif root.right is not None:
+            elif root.right:
                 root.val = self.succNode(root)
                 root.right = self.deleteNode(root.right, root.val)
         return root
