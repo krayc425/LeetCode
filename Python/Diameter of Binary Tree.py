@@ -8,15 +8,15 @@ class TreeNode:
 
 class Solution:
     def diameterOfBinaryTree(self, root: TreeNode) -> int:
-        self.res = 0
+        self.node_count = 0
 
         def dfs(node: TreeNode):
             if not node:
                 return 0
             left = dfs(node.left)
             right = dfs(node.right)
-            self.res = max(self.res, left + right)
-            return max(left, right) + 1
+            self.node_count = max(self.node_count, left + right)  # path
+            return max(left, right) + 1  # depth
 
         dfs(root)
-        return self.res
+        return self.node_count

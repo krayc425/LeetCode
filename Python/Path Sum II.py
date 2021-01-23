@@ -12,7 +12,7 @@ class TreeNode:
 class Solution:
     def pathSum(self, root: TreeNode, sum: int) -> List[List[int]]:
         if not root:
-            return None
+            return []
         res = []
 
         def dfs(node: TreeNode, sum: int, temp: List[int], result: List[List[int]]):

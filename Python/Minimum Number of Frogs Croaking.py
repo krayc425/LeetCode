@@ -8,11 +8,11 @@ class Solution:
             return -1
         word = "croak"
         letter_map = {}
-        count_map = defaultdict(int)
         for i, c in enumerate(word):
             letter_map[c] = i
         res = 0
         curr = 0
+        count_map = defaultdict(int)
         for c in croakOfFrogs:
             if c == "c":
                 curr += 1

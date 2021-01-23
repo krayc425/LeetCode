@@ -17,6 +17,6 @@ class Solution:
             len_2 = expand(i, i + 1)
             max_len = max(len_1, len_2)
             if max_len > end - start:
-                start = i - (max_len - 1) / 2
-                end = i + max_len / 2
-        return s[start:end + 1]
+                start = int(i - (max_len - 1) // 2)
+                end = int(i + max_len // 2)
+        return s[start:(end + 1)]

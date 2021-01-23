@@ -12,7 +12,7 @@ class TreeNode:
 class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         if not root:
-            return None
+            return []
         stack = [root]
         res = []
         while len(stack) > 0:

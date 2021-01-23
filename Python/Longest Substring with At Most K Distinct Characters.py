@@ -3,7 +3,7 @@ from collections import defaultdict
 
 class Solution:
     def lengthOfLongestSubstringKDistinct(self, s: str, k: int) -> int:
-        if len(s) * k == 0:
+        if len(s) == 0 or k == 0:
             return 0
         res = 1
         left = 0
